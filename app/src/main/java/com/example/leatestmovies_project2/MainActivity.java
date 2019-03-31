@@ -161,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements movieDataDesigner
 
             try {
 
-                Thread.sleep(9000);
                 jsonPopData= jsonPop.connection();
                 if(jsonPopData != null)
                 popMovies= jsonPop.extractData(jsonPopData);
@@ -174,8 +173,6 @@ public class MainActivity extends AppCompatActivity implements movieDataDesigner
             }  catch (IOException e) {
                 e.printStackTrace();
             } catch (JSONException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
